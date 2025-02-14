@@ -32,7 +32,7 @@ const features = [
     Icon: Trophy,
     name: "Reward Contributors",
     description:
-      "Distribute STRK or LORD tokens to contributors for their valuable work.",
+      "Distribute STRK or LORDS tokens to contributors for their valuable work.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
@@ -52,7 +52,7 @@ const features = [
     Icon: Star,
     name: "Recognize Top Contributors",
     description:
-      "Highlight and reward top contributors with STRK or LORD tokens and badges.",
+      "Highlight and reward top contributors with STRK or LORDS tokens and badges.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,

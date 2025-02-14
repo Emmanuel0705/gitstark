@@ -191,9 +191,9 @@ export function Hero({
             <p className="text-base sm:text-lg md:text-xl text-white/70 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
               Gitstark is your AI-powered GitHub assistant that helps you reward
               contributors with{" "}
-              <strong className="font-bold">STRK OR LORD tokens</strong>.
+              <strong className="font-bold">STRK OR LORDS tokens</strong>.
               Automate PRs, issues, and more while seamlessly distributing STRK
-              or LORD tokens to recognize and incentivize contributions.
+              or LORDS tokens to recognize and incentivize contributions.
             </p>
           </motion.div>
           <motion.div
