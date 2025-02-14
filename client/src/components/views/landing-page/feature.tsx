@@ -1,55 +1,58 @@
-import {
-  BellIcon,
-  CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
-  InputIcon,
-} from "@radix-ui/react-icons";
-
 import { BentoCard, BentoGrid } from "@/components/bento-grid";
+import {
+  GitGraph,
+  GitMerge,
+  GitPullRequestArrow,
+  Star,
+  Trophy,
+} from "lucide-react";
 
 const features = [
   {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    Icon: GitPullRequestArrow,
+    name: "Manage Pull Requests",
+    description:
+      "Automate PR reviews, merges, and status tracking with Gitstark.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
-    Icon: InputIcon,
-    name: "Full text search",
-    description: "Search through all your files in one place.",
+    Icon: GitGraph,
+    name: "Create & Track Issues",
+    description:
+      "Easily create, assign, and track issues across your repositories.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
   },
   {
-    Icon: GlobeIcon,
-    name: "Multilingual",
-    description: "Supports 100+ languages and counting.",
+    Icon: Trophy,
+    name: "Reward Contributors",
+    description:
+      "Distribute STRK or LORD tokens to contributors for their valuable work.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
-    Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    Icon: GitMerge,
+    name: "Automate PR Merges",
+    description:
+      "Automatically merge PRs that meet your criteria, saving you time.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
   {
-    Icon: BellIcon,
-    name: "Notifications",
+    Icon: Star,
+    name: "Recognize Top Contributors",
     description:
-      "Get notified when someone shares a file or mentions you in a comment.",
+      "Highlight and reward top contributors with STRK or LORD tokens and badges.",
     href: "/",
     cta: "Learn more",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
@@ -59,10 +62,12 @@ const features = [
 
 export function Features() {
   return (
-    <BentoGrid className="lg:grid-rows-3">
-      {features.map((feature) => (
-        <BentoCard key={feature.name} {...feature} />
-      ))}
-    </BentoGrid>
+    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 bg-transparent">
+      <BentoGrid className="lg:grid-rows-3">
+        {features.map((feature) => (
+          <BentoCard key={feature.name} {...feature} />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }

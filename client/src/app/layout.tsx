@@ -45,7 +45,7 @@ export default async function RootLayout({
           >
             <StarknetProvider>
               <SidebarProvider>
-                {session ? <AppSidebar /> : null}
+                {session?.accessToken ? <AppSidebar /> : null}
                 <main className=" w-full relative">
                   <NavBar />
                   {children}

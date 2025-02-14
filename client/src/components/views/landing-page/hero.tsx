@@ -8,6 +8,7 @@ import { Button } from "../../ui/button";
 import Github from "../../../../public/github.png";
 import GithubWhite from "../../../../public/github-white.png";
 import Image from "next/image";
+
 function ElegantShape({
   className,
   delay = 0,
@@ -75,9 +76,9 @@ function ElegantShape({
 }
 
 export function Hero({
-  badge = "Design Collective",
-  title1 = "Elevate Your Digital Vision",
-  title2 = "Crafting Exceptional Websites",
+  badge = "AI-Powered GitHub Assistant",
+  title1 = "Reward Contributors with",
+  title2 = " Starknet Tokens",
 }: {
   badge?: string;
   title1?: string;
@@ -166,14 +167,14 @@ export function Hero({
             initial="hidden"
             animate="visible"
           >
-            <h1 className="text-4xl sm:text-6xl  font-bold mb-6 md:mb-8 tracking-tight">
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
                 {title1}
               </span>
               <br />
               <span
                 className={cn(
-                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 "
+                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300"
                 )}
               >
                 {title2}
@@ -187,9 +188,12 @@ export function Hero({
             initial="hidden"
             animate="visible"
           >
-            <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-              Crafting exceptional digital experiences through innovative design
-              and cutting-edge technology.
+            <p className="text-base sm:text-lg md:text-xl text-white/70 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
+              Gitstark is your AI-powered GitHub assistant that helps you reward
+              contributors with{" "}
+              <strong className="font-bold">STRK OR LORD tokens</strong>.
+              Automate PRs, issues, and more while seamlessly distributing STRK
+              or LORD tokens to recognize and incentivize contributions.
             </p>
           </motion.div>
           <motion.div
@@ -215,7 +219,7 @@ export function Hero({
                 alt="Github"
                 className="hidden dark:block"
               />{" "}
-              Github
+              GitHub
             </Button>
           </motion.div>
         </div>

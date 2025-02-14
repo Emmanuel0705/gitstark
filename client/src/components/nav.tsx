@@ -5,12 +5,11 @@ import { Github } from "lucide-react";
 import { auth, signIn } from "@/auth";
 import { Banner } from "./banner";
 import { SidebarTrigger } from "./ui/sidebar";
-import Image from "next/image";
-import Mira from "../../public/mira.png";
-import MiraWhite from "../../public/mira-white.png";
+
 import { WalletConnectButton } from "./connect-wallet";
 import { UserDropdownMenu } from "./user-dropdown-menu";
 import { HelpDialog } from "./help-dialogue";
+import LogoRender from "./logo";
 
 // interface GitHubRepo {
 //   id: number;
@@ -48,33 +47,18 @@ export default async function NavBar() {
         className="mb-4"
         id="1"
       />
-      <div className=" flex items-center justify-between gap-3  overflow-x-auto overflow-y-visible border-b py-2 pl-2 pr-4 md:pl-3.5 md:pr-5">
-        {session ? (
+      <div className=" flex items-center justify-between gap-3  overflow-x-auto overflow-y-visible py-2 pl-2 pr-4 md:pl-3.5 md:pr-5">
+        {session?.accessToken ? (
           <SelectRepoCombobox
             accessToken={session.accessToken}
             image={session?.user?.image as string}
           />
         ) : (
-          <>
-            <Image
-              src={Mira}
-              alt="Mira ai"
-              width={36}
-              height={36}
-              className="dark:hidden"
-            />
-            <Image
-              src={MiraWhite}
-              alt="Mira ai"
-              width={36}
-              height={36}
-              className="dark:block hidden"
-            />
-          </>
+          <LogoRender />
         )}
         <div className="flex items-center ms-auto gap-x-3.5">
           <HelpDialog />
-          {session ? (
+          {session?.accessToken ? (
             <>
               <WalletConnectButton />
 
@@ -94,7 +78,7 @@ export default async function NavBar() {
           )}
         </div>
       </div>
-      {session ? (
+      {session?.accessToken ? (
         <SidebarTrigger className="absolute left-1 -bottom-10 z-50" />
       ) : null}
     </header>
