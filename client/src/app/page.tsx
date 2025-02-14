@@ -6,7 +6,7 @@ import LandingPage from "@/components/views/landing-page";
 export default async function Home() {
   const session = await auth();
 
-  if (session?.accessToken)
+  if (!session?.accessToken)
     return (
       <div className="h-[90vh] font-[family-name:var(--font-geist-sans)]">
         <Chat
