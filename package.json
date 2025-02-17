@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts & pnpm --dir mira-ai build",
+    "build": "tsup src/index.ts --format esm --dts",
     "build:mira": "pnpm --dir mira-ai build",
     "start": "tsc && node --loader ts-node/esm src/index.ts",
     "clean": "./scripts/clean.sh",
