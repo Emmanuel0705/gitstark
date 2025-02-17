@@ -1,94 +1,131 @@
-# Eliza
+Here’s the complete `README.md` file ready for you to copy and use:
 
-## Edit the character files.
+````markdown
+# Gitstark Automation Script
 
-Open `src/character.ts` to modify the default character. Uncomment and edit.
+This script automates the setup and execution of the **Gitstark** application. It installs dependencies, builds the project, and starts the application. Follow the instructions below to get started.
 
-### Custom characters
+---
 
-To load custom characters instead:
+## Prerequisites
 
-- Use `pnpm start --characters="path/to/your/character.json"`
-- Multiple character files can be loaded simultaneously
+Before running the script, ensure you have the following installed:
 
-### Add clients
+- **Node.js** (v16 or higher)
+- **pnpm** (Package manager)
+- **Bash** (for running the script)
+
+---
+
+## Setup Instructions
+
+1. **Clone the Repository**  
+   Clone this repository to your local machine.
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+````
+
+2. **Rename `example.env` to `.env`**  
+   Rename the `example.env` file to `.env` and update the environment variables with your specific configuration.
+
+   ```bash
+   mv example.env .env
+   ```
+
+3. **Run the Script**  
+   Execute the provided Bash script to install dependencies, build the project, and start the application.
+
+   ```bash
+   chmod +x setup.sh  # Make the script executable
+   ./setup.sh
+   ```
+
+---
+
+## Script Details
+
+The script performs the following steps:
+
+1. **Installs dependencies and builds `mira-ai`**  
+   Navigates to the `mira-ai` directory, installs dependencies, and builds the project.
+
+2. **Installs root dependencies**  
+   Returns to the root directory and installs the required dependencies.
+
+3. **Starts the application**  
+   Launches the application using `pnpm start`.
+
+---
+
+## Interacting with the Agent
+
+You can send the following messages to the Gitstark agent to perform specific tasks:
+
+1. **Create a New Issue**  
+   Ask the agent to create a new issue by providing a title and body.
+
+   Example:
+
+   ```
+   Create a new issue: Title="Bug Fix", Body="Fix the authentication bug."
+   ```
+
+2. **List All Pull Requests**  
+   Request the agent to list all open pull requests.
+
+   Example:
+
+   ```
+   List all PRs.
+   ```
+
+3. **Analyze a Specific Pull Request**  
+   Ask the agent to analyze a particular pull request by providing the PR number.
+
+   Example:
+
+   ```
+   Analyze PR #42.
+   ```
+
+4. **Comment on a Pull Request**  
+   Instruct the agent to comment on a specific pull request.
+
+   Example:
+
+   ```
+   Comment on PR #42: "Great work! Please address the minor formatting issues."
+   ```
+
+5. **Merge a Pull Request and Reward Contributor**  
+   Ask the agent to merge a pull request and reward the contributor with **STRK** or **Lords** tokens.
+
+   Example:
+
+   ```
+   Merge PR #42 and reward 100 STRK.
+   ```
+
+---
+
+## Important Note for Contributors
+
+All contributors **must** provide their wallet address in the PR message to receive rewards.  
+Example PR message:
 
 ```
-# in character.ts
-clients: [Clients.TWITTER, Clients.DISCORD],
-
-# in character.json
-clients: ["twitter", "discord"]
+Wallet Address: 0xYourWalletAddress
 ```
 
-## Duplicate the .env.example template
+---
 
-```bash
-cp .env.example .env
-```
+## Troubleshooting
 
-\* Fill out the .env file with your own values.
+- Ensure all environment variables in `.env` are correctly configured.
+- If the script fails, check for missing dependencies or incorrect paths.
+- For further assistance, refer to the project documentation or contact the maintainers.
 
-### Add login credentials and keys to .env
-
-```
-DISCORD_APPLICATION_ID="discord-application-id"
-DISCORD_API_TOKEN="discord-api-token"
-...
-OPENROUTER_API_KEY="sk-xx-xx-xxx"
-...
-TWITTER_USERNAME="username"
-TWITTER_PASSWORD="password"
-TWITTER_EMAIL="your@email.com"
-```
-
-## Install dependencies and start your agent
-
-```bash
-pnpm i && pnpm start
-```
-
-Note: this requires node to be at least version 22 when you install packages and run the agent.
-
-## Run with Docker
-
-### Build and run Docker Compose (For x86_64 architecture)
-
-#### Edit the docker-compose.yaml file with your environment variables
-
-```yaml
-services:
-  eliza:
-    environment:
-      - OPENROUTER_API_KEY=blahdeeblahblahblah
-```
-
-#### Run the image
-
-```bash
-docker compose up
-```
-
-### Build the image with Mac M-Series or aarch64
-
-Make sure docker is running.
-
-```bash
-# The --load flag ensures the built image is available locally
-docker buildx build --platform linux/amd64 -t eliza-starter:v1 --load .
-```
-
-#### Edit the docker-compose-image.yaml file with your environment variables
-
-```yaml
-services:
-  eliza:
-    environment:
-      - OPENROUTER_API_KEY=blahdeeblahblahblah
-```
-
-#### Run the image
-
-```bash
-docker compose -f docker-compose-image.yaml up
-```
+---
