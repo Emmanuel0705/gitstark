@@ -1,6 +1,7 @@
-Here’s the complete `README.md` file ready for you to copy and use:
+Here’s a `README.md` file for your script and project:
 
-````markdown
+---
+
 # Gitstark Automation Script
 
 This script automates the setup and execution of the **Gitstark** application. It installs dependencies, builds the project, and starts the application. Follow the instructions below to get started.
@@ -26,7 +27,6 @@ Before running the script, ensure you have the following installed:
    git clone <repository-url>
    cd <repository-folder>
    ```
-````
 
 2. **Rename `example.env` to `.env`**  
    Rename the `example.env` file to `.env` and update the environment variables with your specific configuration.
@@ -127,5 +127,3 @@ Wallet Address: 0xYourWalletAddress
 - Ensure all environment variables in `.env` are correctly configured.
 - If the script fails, check for missing dependencies or incorrect paths.
 - For further assistance, refer to the project documentation or contact the maintainers.
-
----
