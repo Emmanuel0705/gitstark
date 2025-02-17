@@ -23,9 +23,6 @@ importers:
       '@elizaos/client-direct':
         specifier: 0.1.7
         version: 0.1.7(@google-cloud/vertexai@1.9.3)(@langchain/core@0.3.37(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(bufferutil@4.0.9)(postcss@8.5.1)(react@19.0.0)(sswr@2.1.0(svelte@5.19.7))(svelte@5.19.7)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(yaml@2.7.0)
-      '@elizaos/client-discord':
-        specifier: 0.1.7
-        version: 0.1.7(@google-cloud/vertexai@1.9.3)(@langchain/core@0.3.37(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(bufferutil@4.0.9)(canvas@2.11.2)(ffmpeg-static@5.2.0)(onnxruntime-node@1.20.0)(puppeteer-core@19.11.1(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10))(puppeteer@19.11.1(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10))(react@19.0.0)(sswr@2.1.0(svelte@5.19.7))(svelte@5.19.7)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
       '@elizaos/client-telegram':
         specifier: 0.1.7
         version: 0.1.7(@google-cloud/vertexai@1.9.3)(@langchain/core@0.3.37(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@19.0.0)(sswr@2.1.0(svelte@5.19.7))(svelte@5.19.7)(vue@3.5.13(typescript@5.6.3))(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
@@ -610,19 +607,6 @@ packages:
     resolution: {integrity: sha512-YIruKw4UILt/ivO4uISmrGq2GdMY6EkoTtD0oS0GvkJFRZbTSdPhzYiUILbJ/QslsvC9H9nTgGgnarnIl4jMfw==}
     engines: {node: '>=16.11.0'}
 
-  '@discordjs/node-pre-gyp@0.4.5':
-    resolution: {integrity: sha512-YJOVVZ545x24mHzANfYoy0BJX5PDyeZlpiJjDkUBM/V/Ao7TFX9lcUvCN4nr0tbr5ubeaXxtEBILUrHtTphVeQ==}
-    hasBin: true
-
-  '@discordjs/opus@https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2':
-    resolution: {tarball: https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2}
-    version: 0.10.0
-    engines: {node: '>=12.0.0'}
-
-  '@discordjs/rest@2.4.0':
-    resolution: {integrity: sha512-Xb2irDqNcq+O8F0/k/NaDp7+t091p+acb51iA4bCKfIn+WFWd6HrNvcsSbMMxIR9NjcMZS6NReTKygqiQN+ntw==}
-    engines: {node: '>=18'}
-
   '@discordjs/rest@2.4.2':
     resolution: {integrity: sha512-9bOvXYLQd5IBg/kKGuEFq3cstVxAMJ6wMxO2U3wjrgO+lHv8oNCT+BBRpuzVQh7BoXKvk/gpajceGvQUiRoJ8g==}
     engines: {node: '>=18'}
@@ -630,12 +614,6 @@ packages:
   '@discordjs/util@1.1.1':
     resolution: {integrity: sha512-eddz6UnOBEB1oITPinyrB2Pttej49M9FZQY8NxgEvc3tq6ZICZ19m70RsmzRdDHk80O9NoYN/25AqJl8vPVf/g==}
     engines: {node: '>=18'}
-
-  '@discordjs/voice@0.17.0':
-    resolution: {integrity: sha512-hArn9FF5ZYi1IkxdJEVnJi+OxlwLV0NJYWpKXsmNOojtGtAZHxmsELA+MZlu2KW1F/K1/nt7lFOfcMXNYweq9w==}
-    version: 0.17.0
-    engines: {node: '>=16.11.0'}
-    deprecated: This version uses deprecated encryption modes. Please use a newer version.
 
   '@discordjs/ws@1.1.1':
     resolution: {integrity: sha512-PZ+vLpxGCRtmr2RMkqh8Zp+BenUaJqlS6xhgWKEZcgC/vfHLEzpHtKkB0sl3nZWpwtcKk6YWy+pU3okL2I97FA==}
@@ -702,11 +680,6 @@ packages:
 
   '@elizaos/client-direct@0.1.7':
     resolution: {integrity: sha512-ZlAm8jXHDPU0Ub4Gtc0F4fY8NOzOdiJZ6mM1DUhs6XB2xGX1aZOeu7xyggHizXvgweOlHJA1of2GHNlED/dknw==}
-    peerDependencies:
-      whatwg-url: 7.1.0
-
-  '@elizaos/client-discord@0.1.7':
-    resolution: {integrity: sha512-P3Pc4GbyzY1ZQy4KPw7FvP2bWcwt++kM9rgapzP039oVgUzguF29S4Jw4pkECiqyfkkajoTqnhS+QzKHsfXH4g==}
     peerDependencies:
       whatwg-url: 7.1.0
 
@@ -1774,10 +1747,6 @@ packages:
 
   '@sapphire/snowflake@3.5.3':
     resolution: {integrity: sha512-jjmJywLAFoWeBi1W7994zZyiNWPIiqRRNAmSERxyg93xRGzNYvGjlZ0gR6x0F4gPRi2+0O6S71kOZYyr3cxaIQ==}
-    engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
-
-  '@sapphire/snowflake@3.5.5':
-    resolution: {integrity: sha512-xzvBr1Q1c4lCe7i6sRnrofxeO1QTP/LKQ6A6qy0iB4x5yfiSfARMEQEghojzTNALDTcv8En04qYNIco9/K9eZQ==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
 
   '@scure/base@1.1.9':
@@ -5208,24 +5177,6 @@ packages:
     resolution: {integrity: sha512-4yf0QO/sllf/1zbZWYnvWw3NxCQwLXKzIj0G849LSufP15BXKM0rbD2Z3wVnkMfjdn/CB0Dpp444gYAACdsplg==}
     engines: {node: '>=18'}
 
-  prism-media@1.3.5:
-    resolution: {integrity: sha512-IQdl0Q01m4LrkN1EGIE9lphov5Hy7WWlH6ulf5QdGePLlPas9p2mhgddTEHrlaXYjjFToM1/rWuwF37VF4taaA==}
-    version: 1.3.5
-    peerDependencies:
-      '@discordjs/opus': '>=0.8.0 <1.0.0'
-      ffmpeg-static: ^5.0.2 || ^4.2.7 || ^3.0.0 || ^2.4.0
-      node-opus: ^0.3.3
-      opusscript: ^0.0.8
-    peerDependenciesMeta:
-      '@discordjs/opus':
-        optional: true
-      ffmpeg-static:
-        optional: true
-      node-opus:
-        optional: true
-      opusscript:
-        optional: true
-
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
@@ -7626,41 +7577,6 @@ snapshots:
     dependencies:
       discord-api-types: 0.37.119
 
-  '@discordjs/node-pre-gyp@0.4.5':
-    dependencies:
-      detect-libc: 2.0.3
-      https-proxy-agent: 5.0.1
-      make-dir: 3.1.0
-      node-fetch: 2.7.0
-      nopt: 5.0.0
-      npmlog: 5.0.1
-      rimraf: 3.0.2
-      semver: 7.7.1
-      tar: 6.2.1
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-
-  '@discordjs/opus@https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2':
-    dependencies:
-      '@discordjs/node-pre-gyp': 0.4.5
-      node-addon-api: 8.3.0
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-
-  '@discordjs/rest@2.4.0':
-    dependencies:
-      '@discordjs/collection': 2.1.1
-      '@discordjs/util': 1.1.1
-      '@sapphire/async-queue': 1.5.5
-      '@sapphire/snowflake': 3.5.5
-      '@vladfrangu/async_event_emitter': 2.4.6
-      discord-api-types: 0.37.97
-      magic-bytes.js: 1.10.0
-      tslib: 2.8.1
-      undici: 6.19.8
-
   '@discordjs/rest@2.4.2':
     dependencies:
       '@discordjs/collection': 2.1.1
@@ -7674,21 +7590,6 @@ snapshots:
       undici: 6.19.8
 
   '@discordjs/util@1.1.1': {}
-
-  '@discordjs/voice@0.17.0(@discordjs/opus@https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2)(bufferutil@4.0.9)(ffmpeg-static@5.2.0)(utf-8-validate@5.0.10)':
-    dependencies:
-      '@types/ws': 8.5.14
-      discord-api-types: 0.37.83
-      prism-media: 1.3.5(@discordjs/opus@https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2)(ffmpeg-static@5.2.0)
-      tslib: 2.8.1
-      ws: 8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-    transitivePeerDependencies:
-      - '@discordjs/opus'
-      - bufferutil
-      - ffmpeg-static
-      - node-opus
-      - opusscript
-      - utf-8-validate
 
   '@discordjs/ws@1.1.1(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
@@ -7876,58 +7777,6 @@ snapshots:
       - vue
       - ws
       - yaml
-
-  '@elizaos/client-discord@0.1.7(@google-cloud/vertexai@1.9.3)(@langchain/core@0.3.37(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(bufferutil@4.0.9)(canvas@2.11.2)(ffmpeg-static@5.2.0)(onnxruntime-node@1.20.0)(puppeteer-core@19.11.1(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10))(puppeteer@19.11.1(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10))(react@19.0.0)(sswr@2.1.0(svelte@5.19.7))(svelte@5.19.7)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
-    dependencies:
-      '@discordjs/opus': https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2
-      '@discordjs/rest': 2.4.0
-      '@discordjs/voice': 0.17.0(@discordjs/opus@https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2)(bufferutil@4.0.9)(ffmpeg-static@5.2.0)(utf-8-validate@5.0.10)
-      '@elizaos/core': 0.1.7(@google-cloud/vertexai@1.9.3)(@langchain/core@0.3.37(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@19.0.0)(sswr@2.1.0(svelte@5.19.7))(svelte@5.19.7)(vue@3.5.13(typescript@5.6.3))(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))
-      '@elizaos/plugin-node': 0.1.7(@google-cloud/vertexai@1.9.3)(@langchain/core@0.3.37(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(bufferutil@4.0.9)(canvas@2.11.2)(onnxruntime-node@1.20.0)(puppeteer-core@19.11.1(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10))(puppeteer@19.11.1(bufferutil@4.0.9)(typescript@5.6.3)(utf-8-validate@5.0.10))(react@19.0.0)(sswr@2.1.0(svelte@5.19.7))(svelte@5.19.7)(typescript@5.6.3)(utf-8-validate@5.0.10)(vue@3.5.13(typescript@5.6.3))(whatwg-url@14.1.0)(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.23.8)
-      discord.js: 14.16.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      libsodium-wrappers: 0.7.15
-      prism-media: 1.3.5(@discordjs/opus@https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2)(ffmpeg-static@5.2.0)
-      whatwg-url: 14.1.0
-      zod: 3.23.8
-    transitivePeerDependencies:
-      - '@echogarden/vosk'
-      - '@google-cloud/vertexai'
-      - '@langchain/anthropic'
-      - '@langchain/aws'
-      - '@langchain/cohere'
-      - '@langchain/core'
-      - '@langchain/google-genai'
-      - '@langchain/google-vertexai'
-      - '@langchain/groq'
-      - '@langchain/mistralai'
-      - '@langchain/ollama'
-      - '@types/puppeteer'
-      - aws-crt
-      - axios
-      - bufferutil
-      - canvas
-      - cheerio
-      - debug
-      - encoding
-      - ffmpeg-static
-      - node-opus
-      - onnxruntime-node
-      - opusscript
-      - peggy
-      - playwright-extra
-      - puppeteer
-      - puppeteer-core
-      - react
-      - solid-js
-      - sswr
-      - supports-color
-      - svelte
-      - typeorm
-      - typescript
-      - utf-8-validate
-      - vue
-      - winax
-      - ws
 
   '@elizaos/client-telegram@0.1.7(@google-cloud/vertexai@1.9.3)(@langchain/core@0.3.37(openai@4.73.0(zod@3.23.8)))(axios@1.7.9)(react@19.0.0)(sswr@2.1.0(svelte@5.19.7))(svelte@5.19.7)(vue@3.5.13(typescript@5.6.3))(ws@8.18.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
     dependencies:
@@ -9442,8 +9291,6 @@ snapshots:
 
   '@sapphire/snowflake@3.5.3': {}
 
-  '@sapphire/snowflake@3.5.5': {}
-
   '@scure/base@1.1.9': {}
 
   '@scure/base@1.2.4':
@@ -10329,7 +10176,8 @@ snapshots:
       jsonparse: 1.3.1
       through: 2.3.8
 
-  abbrev@1.1.1: {}
+  abbrev@1.1.1:
+    optional: true
 
   abi-wan-kanabi@2.2.4:
     dependencies:
@@ -10490,6 +10338,7 @@ snapshots:
     dependencies:
       delegates: 1.0.0
       readable-stream: 3.6.2
+    optional: true
 
   are-we-there-yet@3.0.1:
     dependencies:
@@ -11790,6 +11639,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wide-align: 1.1.5
+    optional: true
 
   gauge@4.0.4:
     dependencies:
@@ -12532,6 +12382,7 @@ snapshots:
   make-dir@3.1.0:
     dependencies:
       semver: 6.3.1
+    optional: true
 
   make-error@1.3.6: {}
 
@@ -12850,6 +12701,7 @@ snapshots:
   nopt@5.0.0:
     dependencies:
       abbrev: 1.1.1
+    optional: true
 
   normalize-package-data@3.0.3:
     dependencies:
@@ -12870,6 +12722,7 @@ snapshots:
       console-control-strings: 1.1.0
       gauge: 3.0.2
       set-blocking: 2.0.0
+    optional: true
 
   npmlog@6.0.2:
     dependencies:
@@ -13410,11 +13263,6 @@ snapshots:
     dependencies:
       parse-ms: 4.0.0
 
-  prism-media@1.3.5(@discordjs/opus@https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2)(ffmpeg-static@5.2.0):
-    optionalDependencies:
-      '@discordjs/opus': https://codeload.github.com/discordjs/opus/tar.gz/679ff3f58e6804b80becc166c7214deb2ca026e2
-      ffmpeg-static: 5.2.0
-
   process-nextick-args@2.0.1: {}
 
   process-warning@4.0.1: {}
@@ -13735,6 +13583,7 @@ snapshots:
   rimraf@3.0.2:
     dependencies:
       glob: 7.2.3
+    optional: true
 
   rimraf@5.0.10:
     dependencies:
@@ -13830,7 +13679,8 @@ snapshots:
     dependencies:
       semver: 7.7.1
 
-  semver@6.3.1: {}
+  semver@6.3.1:
+    optional: true
 
   semver@7.5.4:
     dependencies:
