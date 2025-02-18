@@ -98,8 +98,8 @@ export function Hero({
   };
 
   return (
-    <div className="relative min-h-[94vh] w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
+    <div className="relative min-h-[94vh] w-full flex items-center justify-center overflow-hidden dark:bg-[#030303]">
+      <div className="absolute inset-0 bg-gradient-to-br from-white/90 via-transparent to-white/80 dark:from-indigo-500/[0.05] dark:via-transparent dark:to-rose-500/[0.05] blur-3xl" />
 
       <div className="absolute inset-0 overflow-hidden">
         <ElegantShape
@@ -155,10 +155,12 @@ export function Hero({
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/[0.03] dark:bg-white/[0.03] border border-black/[0.08] dark:border-white/[0.08] mb-8 md:mb-12"
           >
             <Circle className="h-2 w-2 fill-rose-500/80" />
-            <span className="text-sm text-white/60 tracking-wide">{badge}</span>
+            <span className="text-sm text-black/60 dark:text-white/60 tracking-wide">
+              {badge}
+            </span>
           </motion.div>
 
           <motion.div
@@ -168,13 +170,13 @@ export function Hero({
             animate="visible"
           >
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 md:mb-8 tracking-tight">
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
+              <span className="bg-clip-text text-transparent bg-gradient-to-b from-black to-black/80 dark:from-white dark:to-white/80">
                 {title1}
               </span>
               <br />
               <span
                 className={cn(
-                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300"
+                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-400  dark:from-indigo-300 dark:via-white/90 via-black/90 to-rose-400 dark:to-rose-300"
                 )}
               >
                 {title2}
@@ -188,7 +190,7 @@ export function Hero({
             initial="hidden"
             animate="visible"
           >
-            <p className="text-base sm:text-lg md:text-xl text-white/70 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl text-black/70 dark:text-white/70 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
               Gitstark is your AI-powered GitHub assistant that helps you reward
               contributors with{" "}
               <strong className="font-bold">STRK OR LORDS tokens</strong>.
@@ -225,7 +227,7 @@ export function Hero({
         </div>
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-50 to-white dark:from-[#030303] via-transparent dark:to-[#030303]/80 pointer-events-none" />
     </div>
   );
 }
