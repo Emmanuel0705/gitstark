@@ -1,6 +1,6 @@
 import type { UUID, Character } from "@elizaos/core";
 
-const BASE_URL = process.env.AGENT_BASE_URL || "http://143.198.71.234:3000";
+// const BASE_URL = process.env.AGENT_BASE_URL || "http://143.198.71.234:3000";
 
 const fetcher = async ({
   url,
@@ -39,7 +39,7 @@ const fetcher = async ({
     }
   }
 
-  return fetch(`${BASE_URL}${url}`, options).then(async (resp) => {
+  return fetch(`${"api"}${url}`, options).then(async (resp) => {
     const contentType = resp.headers.get("Content-Type");
     if (contentType === "audio/mpeg") {
       return await resp.blob();
