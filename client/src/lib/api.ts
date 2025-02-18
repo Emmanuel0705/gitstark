@@ -1,6 +1,7 @@
 import type { UUID, Character } from "@elizaos/core";
 
-const BASE_URL = process.env.AGENT_BASE_URL || "http://localhost:3000";
+const BASE_URL =
+  process.env.AGENT_BASE_URL || "https://8c16-143-198-71-234.ngrok-free.app";
 
 const fetcher = async ({
   url,
